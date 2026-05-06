@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Portofolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/image/icon.jpg" />
+    <link rel="shortcut icon" type="image/jpeg" href="assets/image/icon.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="project-page">
+    <header>
+      <div class="container header-inner">
+        <h2 class="logo">My Portofolio</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main container">
+      <section class="section-block latest-project-block">
+        <h2 class="section-title centered">Latest Project</h2>
+        <div class="latest-project-list">
+          <article class="latest-project-item">
+            <div class="project-thumb image-thumb">
+              <img
+                src="assets/image/odigi/Login.png"
+                alt="Halaman Login - Sistem Keuangan Odigi"
+              />
+            </div>
+            <h3><span>Sistem Keuangan</span> Odigi</h3>
+            <a
+              href="#"
+              class="btn project-btn open-project-modal"
+              data-project-title="Sistem Keuangan Odigi"
+              data-project-images="assets/image/odigi/Login.png|assets/image/odigi/otp.png|assets/image/odigi/Dashboard1.png|assets/image/odigi/Dashboard2.png|assets/image/odigi/Dashboard3.png |assets/image/odigi/Registrasi.png |assets/image/odigi/Data.png |assets/image/odigi/Bank.png |assets/image/odigi/SLIK.png |assets/image/odigi/Komite.png"
+            >
+              View Details
+            </a>
+          </article>
+
+          <article class="latest-project-item">
+            <div class="project-thumb">
+              <img
+                src="assets/image/diabetic/Login.png"
+                alt="Login - Sistem Informasi Diabetic Retinopathy Detection"
+              />
+            </div>
+            <h3>
+              <span>Sistem Informasi Diabetic</span> Retinopathy Detection
+            </h3>
+            <a
+              href="#"
+              class="btn project-btn open-project-modal"
+              data-project-title="Sistem Informasi Diabetic Retinopathy Detection"
+              data-project-images="assets/image/diabetic/login.png|assets/image/diabetic/Dashboard.png|assets/image/diabetic/Manajemen User.png|assets/image/diabetic/Manajemen Dokter.png|assets/image/diabetic/Manajemen Pasien.png|assets/image/diabetic/Clasifikasi.png|assets/image/diabetic/Histori.png"
+            >
+              View Details
+            </a>
+          </article>
+
+          <article class="latest-project-item">
+            <div class="project-thumb">
+              <!-- <img src="assets/image/diabetic/Login.png" alt="Login - Sistem Informasi Diabetic Retinopathy Detection"/> -->
+            </div>
+            <h3></h3>
+            <a
+              href="#"
+              class="btn project-btn open-project-modal"
+              data-project-title=""
+            >
+              View Details
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <div
+        class="project-modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="projectModalTitle"
+      >
+        <button
+          type="button"
+          class="project-modal-close"
+          id="closeProjectModal"
+          aria-label="Close"
+        >
+          ×
+        </button>
+        <h3 id="projectModalTitle">Project Preview</h3>
+        <div class="project-modal-viewer">
+          <button
+            type="button"
+            class="project-modal-nav prev"
+            id="prevProjectImage"
+            aria-label="Previous image"
+          >
+            ‹
+          </button>
+          <img id="projectModalImage" src="" alt="Project preview" />
+          <button
+            type="button"
+            class="project-modal-nav next"
+            id="nextProjectImage"
+            aria-label="Next image"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Portofolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/image/icon.jpg" />
+    <link rel="shortcut icon" type="image/jpeg" href="assets/image/icon.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body class="about-page">
+    <header>
+      <div class="container header-inner">
+        <h2 class="logo">My Portofolio</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main container">
+      <section class="section-block testimonial-block">
+        <h2 class="section-title centered">Tentang Saya</h2>
+        <p class="kicker about-kicker">Mengubah ide menjadi pengalaman digital</p>
+        <div class="testimonial-layout">
+          <button
+            class="slider-arrow"
+            id="prevTestimonial"
+            aria-label="Previous testimonial"
+          >
+            ‹
+          </button>
+          <div class="testimonial-photo-card">
+            <div class="photo-glow"></div>
+            <!-- <div class="photo-symbol plus">+</div>
+            <div class="photo-symbol circle"></div> -->
+            <img class="photo-avatar photo-avatar-image" id="testimonialAvatar" src="assets/image/foto.jpg" alt="Foto Profil" />
+          </div>
+          <article class="testimonial-content">
+            <p id="testimonialText">
+              Saya merupakan siswa Informatika dengan fokus pada pengembangan Front-End, Back-End, dan Artificial
+              Intelligence. Saya berkomitmen untuk membangun solusi digital yang tidak hanya menarik secara visual,
+              tetapi juga optimal dari sisi performa dan fungsionalitas. Saya selalu tertantang untuk terus belajar,
+              berinovasi, dan memberikan hasil terbaik dalam setiap proyek yang saya kerjakan.
+            </p>
+            <h3 id="testimonialName">Fattah Rafif Syauqi</h3>
+          </article>
+          <button class="slider-arrow" id="nextTestimonial" aria-label="Next testimonial">
+            ›
+          </button>
+        </div>
+        <div class="slider-dots" aria-hidden="true">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="section-block about-tools-block">
+        <h2 class="section-title centered">Tools and Skills</h2>
+        <div class="tools-grid">
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" />
+          </article>
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/css/1572B6" alt="CSS" />
+          </article>
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/php/777BB4" alt="PHP" />
+          </article>
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" />
+          </article>
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" />
+          </article>
+          <article class="tool-card">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block about-contact-block">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-subtitle">
+          Untuk pertanyaan bisnis dan kemitraan, silakan hubungi saya di bawah ini.
+        </p>
+        <div class="about-contact-list">
+          <div class="about-contact-item">
+            <span class="about-contact-icon"><i class="bi bi-telephone-fill"></i></span>
+            <div>
+              <p class="about-contact-label">Phone</p>
+              <p class="about-contact-value">0821-7296-1817</p>
+            </div>
+          </div>
+          <div class="about-contact-item">
+            <span class="about-contact-icon"><i class="bi bi-envelope-fill"></i></span>
+            <div>
+              <p class="about-contact-label">Email</p>
+              <p class="about-contact-value">fattahrafifsyauqi@gmail.com</p>
+            </div>
+          </div>
+          <div class="about-contact-item">
+            <span class="about-contact-icon"><i class="bi bi-geo-alt-fill"></i></span>
+            <div>
+              <p class="about-contact-label">Address</p>
+              <p class="about-contact-value"> Jl. Ketintang No.89, Kec. Gayungan, Surabaya, Jawa Timur</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
